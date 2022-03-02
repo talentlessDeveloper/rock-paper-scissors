@@ -176,3 +176,5 @@ function result() {
     draw();
   }
 }
+
+document.querySelector("footer span").innerText = `${new Date().getFullYear()}`;
