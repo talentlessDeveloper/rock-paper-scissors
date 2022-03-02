@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="scoreboard">
+      <div class="tag user">user</div>
+      <div class="tag comp">comp</div>
+      <span class="user-score">0</span>:<span class="comp-score">0</span>
+    </div>
+    <p class="result"></p>
+
+    <div class="choices">
+      <button class="choice" id="rock"><i class="fas fa-hand-rock"></i></button>
+      <button class="choice" id="paper">
+        <i class="fas fa-hand-paper"></i>
+      </button>
+      <button class="choice" id="scissors">
+        <i class="fas fa-hand-scissors"></i>
+      </button>
+    </div>
+    <small class="message">Make your move</small>
+
+    <span class="time"></span>
+    <span class="time-reset"></span>
+    <div class="set-time">
+      <p>Want to race against time?</p>
+      <label>Timer(secs)</label>
+      <input type="number" max="60" min="10" id="timer" />
+      <button class="play"><i class="fa fa-play"></i></button>
+      <button class="reset">
+        <i class="fa fa-refresh"></i>
+      </button>
+    </div>
+
+    <footer>
+      coded by Kareem <span></span>
+      <a href="https://talentlessDeveloper.github.io/rock-paper-scissors">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </footer>
+  </body>
+</html>

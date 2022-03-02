@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Asap&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Asap", sans-serif;
+  background-color: #262632;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+
+header > h1 {
+  color: #262632;
+}
+
+.scoreboard {
+  width: 200px;
+  height: 100px;
+  border: 3px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 46px;
+}
+
+.scoreboard span {
+  font-size: 50px;
+}
+
+.tag {
+  background-color: #d25b62;
+  position: absolute;
+  top: 40px;
+  padding: 2px 5px;
+  border: 2px solid #262632;
+  font-size: 20px;
+}
+.tag.user {
+  left: -30px;
+}
+
+.tag.comp {
+  right: -30px;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.result sup {
+  font-size: 16px;
+}
+
+.choices {
+  margin-top: 30px;
+}
+
+.choice {
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  margin: 10px;
+  color: #ffc57a;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.choice:hover {
+  background-color: #1d2d52;
+}
+
+.green-glow {
+  border: 2px solid #4dcc2d;
+  box-shadow: 2px 2px 5px #4b8d3a;
+}
+.red-glow {
+  border: 2px solid #fc121b;
+  box-shadow: 2px 0px 5px #c03c3e;
+}
+.grey-glow {
+  border: 2px solid #444242;
+  box-shadow: 2px 2px 5px #444242;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.time,
+.time-reset {
+  font-size: 18px;
+}
+
+.time-reset {
+  color: #ffc57a;
+}
+
+.set-time {
+  margin: 30px auto 30px;
+  text-align: center;
+  padding: 3px 5px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.set-time label {
+  font-size: 18px;
+}
+
+.set-time input {
+  margin-left: 7px;
+  border-radius: 4px;
+  border: none;
+  width: 65px;
+}
+
+.set-time button {
+  background: #fff;
+  width: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.set-time button:hover {
+  background: #c03c3e;
+  color: #fff;
+}
+
+/* Chrome, Safari, Edge, Opera */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+input:focus {
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+}
+
+footer a {
+  text-decoration: none;
+  color: #4dcc2d;
+  font-size: 24px;
+}
+
+footer a:hover,
+footer a:active {
+  color: #4b8d3a;
+}
+
+@media (max-width: 640px) {
+  .result {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
