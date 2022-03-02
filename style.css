@@ -139,7 +139,7 @@ header > h1 {
 
 .set-time button {
   background: #fff;
-  width: 40px;
+  width: 60px;
   border: none;
   border-radius: 8px;
   padding: 7px 0;
@@ -156,7 +156,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   margin: 0;
   background: #fff;
-  width: 40px;
   border: none;
   border-radius: 8px;
   padding: 7px 0;
