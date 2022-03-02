@@ -197,4 +197,9 @@ footer a:active {
     margin: 0 auto;
     width: 90%;
   }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
 }
